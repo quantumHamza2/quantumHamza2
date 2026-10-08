@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="Mohammad Hamza Khan. Building intelligence into useful software. AI, data and full-stack engineering.">
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#203143" stroke-width=".6"/></pattern><radialGradient id="glow"><stop stop-color="#58edc5" stop-opacity=".15"/><stop offset="1" stop-color="#0b1421" stop-opacity="0"/></radialGradient><linearGradient id="accent"><stop stop-color="#70f0cd"/><stop offset="1" stop-color="#edc880"/></linearGradient></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}.mono{font-family:monospace}.orbit{transform-origin:807px 179px;animation:spin 24s linear infinite}.reverse{animation-direction:reverse;animation-duration:32s}.pulse{animation:pulse 3s ease-in-out infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.35}}@media(prefers-reduced-motion:reduce){.orbit,.pulse{animation:none}}</style>
+<rect width="1000" height="360" rx="22" fill="#0b1421"/><rect x="1" y="1" width="998" height="358" rx="21" fill="url(#grid)" stroke="#293d50"/>
+<circle cx="807" cy="180" r="185" fill="url(#glow)"/>
+<path d="M36 35H67M36 35V66M964 325H933M964 325V294" fill="none" stroke="#70f0cd" stroke-width="2"/>
+<circle cx="63" cy="66" r="4" fill="#70f0cd" class="pulse"/><text x="77" y="71" fill="#70f0cd" font-size="13" letter-spacing="3" class="mono">QUANTUM / LAB</text>
+<text x="57" y="135" font-size="19" fill="#94a8bc">MOHAMMAD</text><text x="53" y="197" font-size="59" font-weight="700" fill="#f4f7fc" letter-spacing="-2">HAMZA KHAN</text>
+<text x="57" y="237" font-size="20" fill="#bccbda">Building intelligence into useful software.</text>
+<path d="M57 261H570" stroke="#293d50"/>
+<text x="57" y="291" font-size="12" fill="#edc880" letter-spacing="2" class="mono">AI SYSTEMS</text><text x="192" y="291" font-size="12" fill="#748da4">/</text><text x="212" y="291" font-size="12" fill="#9ab1c8" letter-spacing="2" class="mono">DATA</text><text x="279" y="291" font-size="12" fill="#748da4">/</text><text x="300" y="291" font-size="12" fill="#9ab1c8" letter-spacing="2" class="mono">FULL STACK</text>
+<g fill="none" stroke="#466374"><ellipse cx="807" cy="179" rx="112" ry="49" transform="rotate(-35 807 179)"/><ellipse cx="807" cy="179" rx="112" ry="49" transform="rotate(35 807 179)"/><ellipse cx="807" cy="179" rx="112" ry="49" transform="rotate(90 807 179)"/></g>
+<circle cx="807" cy="179" r="29" fill="#142b36" stroke="#70f0cd"/><text x="807" y="187" text-anchor="middle" fill="#70f0cd" font-size="24" class="mono">h.</text>
+<g class="orbit"><circle cx="807" cy="67" r="6" fill="#70f0cd"/><circle cx="807" cy="291" r="3" fill="#70f0cd" opacity=".5"/></g><g class="orbit reverse"><circle cx="916" cy="179" r="5" fill="#edc880"/></g>
+<text x="807" y="327" text-anchor="middle" fill="#748da4" font-size="10" letter-spacing="2" class="mono">CURIOUS BY DESIGN.</text></svg>

@@ -1,0 +1,36 @@
+name: Refresh lab pulse
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_profile.py'
+      - '.github/workflows/profile.yml'
+permissions:
+  contents: write
+concurrency:
+  group: profile-pulse
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate public activity panel
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_profile.py
+      - name: Save changed panel
+        run: |
+          git add assets/pulse.svg assets/pulse-data.json
+          if git diff --cached --quiet; then
+            echo 'No new public data.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh public profile activity snapshot'
+          git push
